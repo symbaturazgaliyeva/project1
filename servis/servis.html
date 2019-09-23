@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="servis.css" rel="stylesheet">
+	<link href="../modal.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="../js/jquery.maskedinput.min.js"></script>
+
+	<title>Office 365</title>
+</head>
+<body>
+	<div class="menu">
+		<ul class="menu-ul">
+			<li class="menu-li"><a href="../index.html" class="menu-a">Облачные сервисы</a></li>
+			<li class="menu-li"><a href="servis.html" class="menu-a">Помощь и поддержка</a></li>
+		</ul>
+	</div>
+	<div class="main-container">
+		<div class="my-flex-container">
+			<div class="icon-text-container">
+				<div class="icon-text">
+			<img src="img/dispatcher.svg" class="icon" alt="">
+			<h1 class="my-h1">Сервис поддержки</h1>
+		</div>
+		<h5>Легче работать, когда Вы знаете, что у Вас есть быстрая, квалифицированная и доступная поддержка!</h5>
+		<div class="text-solution">
+			<p class="p-solution">Включает решение вопросов по:<br>
+				1. Пакету <b>Microsoft Office</b>.<br>
+				2. Корпоративной мобильной связи.<br>
+				3. Корпоративному Интернету</p>
+		</div>
+		<div class="faq">
+			<img src="img/faq.svg" class="icon" alt="">
+		</div>
+	</div>
+	<div class="three">
+		
+			<div class="my-flex-block">
+
+				<img src="img/phone.svg" class="icon" alt="">
+				<h4 class="my-h4">ПОДДЕРЖКА ПО ТЕЛЕФОНУ</h4>
+				
+				<p class="three-p">Звоните нам по телефону <b>+7(777) 155-35-68</b> по любым вопросам.</p>
+			</div>
+			<div class="my-flex-block">
+				<img src="img/mail.svg" alt="">
+				<h4 class="my-h4">ПОДДЕРЖКА ПО EMAIL</h4>
+				
+				<p class="three-p">Мы ответим Вам на столько быстро на сколько это возможно!
+				<b>pochta@beeline.kz</b></p>
+				<p class="three-p">Или воспользуйтесь нашей контактной формой</p>
+			</div>
+			<div class="my-flex-block">
+				<img src="img/comp.svg" alt="">
+				<h4 class="my-h4">УДАЛЕННАЯ ПОДДЕРЖКА</h4>
+			
+				<p class="three-p">Наши специалисты удаленно подключатся к Вашему рабочему столу и решат любые проблемы с ПО.</p>
+			</div>
+			
+		</div>
+		<div class="zayavka">
+		<input class="btn" type="submit" name="submit" value="ОТПРАВИТЬ ЗАЯВКУ" id="button">
+		</div>
+	</div>
+	<div class="form">
+			<form class="forma banner">
+  				<fieldset class="up"> 
+  				</fieldset>
+ 			<fieldset class="bottom">
+    			<label>
+      				Попробуйте бесплатно
+    			</label>
+    		<button class="btn" id="button">ПОДКЛЮЧИТЬ</button>
+  			</fieldset>
+			</form>
+		</div>
+</div>
+<div class="modal-okno" id="modal">
+<div class="modal">
+  <header class="modal-header"> 
+    <h1 align="center">Оформление заявки</h1>
+    <p class="contacts">Оставьте свои контакты, и наш менеджер обязательно свяжется с Вами.</p>
+    <div class="close">
+      <a  href="#">
+      <img src="../img/Shape.svg" class="close-button" id="close" alt=""></a>
+    </div>
+  </header>
+
+  <form class="modal-body" method="POST" action="https://hidden.beeline.kz/scripts/send_b2bmp.php">
+   <div class="phone-mail">
+     <input class="small-input" type="text" class="text" name="phone" id="phone" placeholder=" +7 (999) 99 99 999">
+    
+     <input class="small-input" type="text" class="text" name="email" placeholder="  Электронная почта">
+  </div>
+    
+      <input class="resort" type="text" class="text" name="fname" placeholder="  Как в Вам обращаться">
+   
+    <div class="message-button">
+    <textarea type="text" name="message" class="message" rows="4" cols="50" placeholder="...."></textarea>
+    <button class="btn" id="myButton" disabled>ОТПРАВИТЬ ЗАЯВКУ</button>
+    </div>
+  <div class="checkbox-block">
+  <label for="myCheckbox" class="container">
+  	<p>Я согласен на обработку моих персональных данных.</p>
+      <input type="checkbox" id="myCheckbox">
+      <span class="checkmark"></span>
+  </label>
+</div>
+  </form>
+</div>
+</div>
+</body>
+</html>
+<script>
+
+	$( "#button" ).click(function() {
+	  $("#modal").css("display","block");
+	});
+
+	$( "#close" ).click(function() {
+	  $("#modal").css("display","none");
+	});
+	$(document).ready(function () {
+		$('#myCheckbox').click(function () {
+		$('#myButton').prop("disabled", !$("#myCheckbox").prop("checked")); 
+  	})
+	});
+    $(document).ready(function() {
+    $("#phone").mask("+7 (999) 99-99-999");
+  });
+</script>

@@ -1,0 +1,398 @@
+﻿html {
+	min-width: 360px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color:#333333;
+	position: relative;
+	margin: 0;
+}
+.menu{
+	
+}
+.menu-ul{
+	margin-bottom: 20px;
+	margin-top: 25px;
+	margin-right: 25px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 500;
+
+}
+.menu-li{
+	display: inline-block;
+	margin: 10px;
+}
+.menu-a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.menu-a:visited{
+	color: #949494;
+}
+.menu-a:active{
+	color: black;
+}
+
+.menu-a:hover { 
+	text-decoration: none;
+	border-bottom: 1px #feda24 solid;
+
+}
+.main-container{
+	display: flex;
+	width: 100%;
+
+}
+.my-flex-container{
+	display: flex;
+	width: 70%;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-flow: wrap;
+}
+.my-flex-block{
+	display: block;
+	width: 270px;
+	left: 164px;
+	margin:10px 5%;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: normal;
+	text-align: center;
+
+}
+.form {
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+}
+p {
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	width: 270px;
+	left: 145px;
+}
+.contacts{
+  font-size: 16px;
+  color: #333333;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.business-container{
+	width: 100%;
+}
+.my-h4{
+	font-size: 24px;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+.business-block, .business-block2, .business-block3{
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+	border-radius: 10px;
+	margin: 5% 10%;
+	padding: 20px 50px;
+}
+.business-base, .business, .bus-premium{
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+.name, .name2, .name3{
+	display: flex;
+	font-size: 21px;
+	font-weight: bold;
+	left:190px;
+
+}
+.price, .price2, .price3{
+	font-size: 21px;
+	font-weight: normal;
+	line-height: normal;
+	text-align: right;
+
+}
+hr{
+	border: 1px solid #feda24;
+	width: 100%;
+	height: 1px;
+}
+.online-block {
+	display: block;
+	margin: 10px;
+	text-align: left;
+	padding: 10px 0;
+}
+.mail-block {
+	display: block;
+	margin: 10px;
+	padding: 10px 0px;
+	break-inside: avoid;
+}
+.mail-block2 {
+	display: block;
+	margin: 10px;
+	padding: 10px 0px;
+	break-inside: avoid;
+}
+.version-block4 {
+	display: block;
+	margin: 10px 10px;
+	text-align: left;
+	break-inside: avoid;
+}
+.online-text{
+	text-align: left;
+}
+
+.content {
+	width: 100%;
+	margin: 15px auto;
+	columns: 2;
+	column-width: auto;
+	column-count: 2;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.banner {
+  background-color: #D83B01;
+  background-image: url(file:./img/form/Asset.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 51%;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  width: 328px;
+  height: 525px;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url(file:./img/form/logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+
+.up {
+  height: 61%;
+  padding: 20px 20px 0 20px;
+}
+
+.bottom {
+  height: 210px;
+  background: #FEDA24;
+  padding: 20px;
+}
+.bottom .btn {
+  background: #FFFFFF;;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 6px;
+  color: #333333;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin: 25px auto;
+  display: block;
+  padding: 8px 16px;
+  width: 194px;
+  height: 56px;
+}
+.bottom label {
+  color: #0E0E0E;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+}
+.forma{
+	position: sticky;
+	top: 70px;
+	align-items: flex-start;
+	-webkit-box-ordinal-group:3;
+	-webkit-box-align:start;
+}
+.modal-okno{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	background: rgba(58, 58, 58, 0.8);
+	z-index: 1;
+	top: 0;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 641px) {
+
+	.my-flex-container {
+	    width: 55%;
+	}
+
+	.my-flex-block {
+		width: 80%;
+	}
+
+	.my-flex-block p {
+		width: 100%;
+	}
+
+	.form {
+		width: 35%;
+		min-width: 280px;
+	}
+
+	.forma {
+		top: 20px;
+	}
+	.business-base, .business, .bus-premium {
+		width: 100%;
+		margin: 10px;
+		text-align: center;
+	}
+	.name, .name2, .name3 {
+		font-size: 21px;
+		font-weight: bold;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+}
+.price, .price2, .price3 {
+	font-size: 21px;
+	font-weight: normal;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+}
+.content, .content2, .content3{
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-flow: column;
+}
+.online-block, .version-block, .version-block3, .version-block4 {
+	width: 90%;
+	margin: 15px 0;
+
+}
+.online-text p {
+	margin: 15px 0;
+}
+.mail-block, .onvers-block {
+    display: block;
+    margin: 15px 0;
+}
+.my-h4{
+	font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+}
+}
+
+@media screen and  (max-width: 640px)  {
+.main-container{
+	position: relative;
+	flex-flow: column-reverse;
+}
+.form{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.my-flex-container{
+	width: 100%;
+}
+.business-base, .business, .bus-premium {
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.content {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-flow: column;
+	margin: 5px -25px;
+}
+.price, .price2, .price3 {
+	font-size: 21px;
+	font-weight: normal;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.business-block, .business-block2, .business-block3{
+	width: 83%;
+}
+.my-h4{
+	font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.my-flex-block {
+    width: 90%;
+}
+
+.my-flex-block p {
+    width: 80%;
+    min-width: 320px;
+    margin: auto;
+}
+
+.content p {
+	width: 100%;
+}
+
+.online-block, .version-block, .version-block3, .version-block4 {
+	width: 90%;
+	margin: 15px 0;
+
+}
+.online-text p {
+	margin: 15px 0;
+}
+.mail-block, .onvers-block {
+    display: block;
+    margin: 5px 0;
+}
+}
+@media screen and  (max-width: 640px)  {
+	.menu-ul{
+	margin-bottom: 10px;
+	margin-top: 25px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+	.menu-li{
+	margin: 10px;
+}	
+}
